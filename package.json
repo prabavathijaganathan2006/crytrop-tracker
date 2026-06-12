@@ -1,0 +1,16 @@
+{
+  "name": "crypto-price-tracker",
+  "version": "1.0.0",
+  "description": "Cryptocurrency Price Tracker",
+  "main": "backend/app.py",
+  "scripts": {
+    "start": "python backend/app.py",
+    "dev": "concurrently \"python backend/app.py\" \"cd frontend && python -m http.server 8080\"",
+    "backend": "python backend/app.py",
+    "frontend": "cd frontend && python -m http.server 8080"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
